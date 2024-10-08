@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #0a0a0a;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .container {
+    text-align: center;
+    background-color: #2a2a2a;
+    padding: 30px;
+    border-radius: 5px;
+    max-width: 400px;
+    width: 100%;
+  }
+
+  .profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 3px;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+
+  h1 {
+    font-size: 26px;
+    margin-bottom: 10px;
+  }
+
+  .bio {
+    font-size: 14px;
+    color: #ddd;
+    margin-bottom: 20px;
+  }
+
+  .container-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .youtube-link {
+    display: flex;
+    justify-content: start;
+    height: fit-content;
+    align-items: center;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s;
+  }
+
+  .youtube-link img {
+    width: 30px;
+    margin-right: 10px;
+    border-radius: 3px;
+  }
+
+  .youtube-link:hover {
+    background-color: #444;
+  }
+
+  .footer {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #aaa;
+  }
+
+  .footer a {
+    color: #aaa;
+    text-decoration: none;
+  }
+
+  .share-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 20px;
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 22px;
+    }
+
+    .profile-img {
+      width: 120px;
+      height: 120px;
+    }
+
+    .youtube-link img {
+      width: 25px;
+    }
+  }
